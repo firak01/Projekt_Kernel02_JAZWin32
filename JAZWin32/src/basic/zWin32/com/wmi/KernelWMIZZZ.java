@@ -8,13 +8,14 @@ import com.jacob.com.Variant;
 import basic.zBasic.ExceptionZZZ;
 import basic.zBasic.ReflectCodeZZZ;
 import basic.zBasic.util.datatype.string.StringZZZ;
+import basic.zKernel.IKernelZZZ;
 import basic.zKernel.KernelUseObjectZZZ;
 import basic.zKernel.KernelZZZ;
 
 public class KernelWMIZZZ extends KernelUseObjectZZZ{
 	private ActiveXComponent objWMIService = null;
 	
-	public KernelWMIZZZ(KernelZZZ objKernel, String[] saFlagControl) throws ExceptionZZZ{
+	public KernelWMIZZZ(IKernelZZZ objKernel, String[] saFlagControl) throws ExceptionZZZ{
 		super(objKernel);
 		KernelWMINew_(saFlagControl);
 	}
@@ -55,7 +56,7 @@ public class KernelWMIZZZ extends KernelUseObjectZZZ{
 		Dispatch objProcs = objWMIService.invoke("InstancesOf",arg).toDispatch();
 		EnumVariant enumProcs = Dispatch.get(objProcs, "_newenum" ).toEnumVariant();
 
-		//ACHTUNG: Man muss jederzeit beenden dürfen, ohne dass ein Fehler passiert !!!
+		//ACHTUNG: Man muss jederzeit beenden dï¿½rfen, ohne dass ein Fehler passiert !!!
 		while ( enumProcs.hasMoreElements()){
 			Dispatch objProcess = enumProcs.Next().toDispatch();
 			if(objProcess!=null){
@@ -88,7 +89,7 @@ public class KernelWMIZZZ extends KernelUseObjectZZZ{
 		Dispatch objProcs = objWMIService.invoke("InstancesOf",arg).toDispatch();
 		EnumVariant enumProcs = Dispatch.get(objProcs, "_newenum" ).toEnumVariant();
 
-		//ACHTUNG: Man muss jederzeit beenden dürfen, ohne dass ein Fehler passiert !!!
+		//ACHTUNG: Man muss jederzeit beenden dï¿½rfen, ohne dass ein Fehler passiert !!!
 		while ( enumProcs.hasMoreElements()){
 			Dispatch objProcess = enumProcs.Next().toDispatch();
 			if(objProcess!=null){
@@ -119,7 +120,7 @@ public class KernelWMIZZZ extends KernelUseObjectZZZ{
 		Dispatch objProcs = objWMIService.invoke("InstancesOf",arg).toDispatch();
 		EnumVariant enumProcs = Dispatch.get(objProcs, "_newenum" ).toEnumVariant();
 
-		//ACHTUNG: Man muss jederzeit beenden dürfen, ohne dass ein Fehler passiert !!!
+		//ACHTUNG: Man muss jederzeit beenden dï¿½rfen, ohne dass ein Fehler passiert !!!
 		while ( enumProcs.hasMoreElements()){
 			Dispatch objProcess = enumProcs.Next().toDispatch();
 			if(objProcess!=null){
