@@ -23,6 +23,8 @@ public class Win32AllTest {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		junit.swingui.TestRunner.run(Win32AllTest.class);
+		//Ab Eclipse 4.4 ist junit.swingui sogar nicht mehr Bestandteil des Bundles
+		//also auch nicht mehr unter der Eclipse Variablen JUNIT_HOME/junit.jar zu finden. 
+		//junit.swingui.TestRunner.run(Win32AllTest.class);
 	}
 }
