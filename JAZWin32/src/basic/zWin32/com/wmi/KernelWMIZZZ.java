@@ -11,6 +11,7 @@ import basic.zBasic.util.datatype.string.StringZZZ;
 import basic.zKernel.IKernelZZZ;
 import basic.zKernel.KernelUseObjectZZZ;
 import basic.zKernel.KernelZZZ;
+import basic.zKernel.flag.IFlagUserZZZ;
 
 public class KernelWMIZZZ extends KernelUseObjectZZZ{
 	private ActiveXComponent objWMIService = null;
@@ -30,7 +31,7 @@ public class KernelWMIZZZ extends KernelUseObjectZZZ{
 				stemp = saFlagControl[iCount];
 				btemp = setFlag(stemp, true);
 				if(btemp==false){ 								   
-					   ExceptionZZZ ez = new ExceptionZZZ( stemp, iERROR_FLAG_UNAVAILABLE, this, ReflectCodeZZZ.getMethodCurrentName()); 					 
+					   ExceptionZZZ ez = new ExceptionZZZ( stemp, IFlagUserZZZ.iERROR_FLAG_UNAVAILABLE, this, ReflectCodeZZZ.getMethodCurrentName()); 					 
 					   throw ez;		 
 				}
 			}
