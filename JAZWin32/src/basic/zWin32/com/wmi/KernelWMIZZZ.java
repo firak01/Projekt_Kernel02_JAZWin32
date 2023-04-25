@@ -121,7 +121,7 @@ public class KernelWMIZZZ extends KernelUseObjectZZZ{
 		Dispatch objProcs = objWMIService.invoke("InstancesOf",arg).toDispatch();
 		EnumVariant enumProcs = Dispatch.get(objProcs, "_newenum" ).toEnumVariant();
 
-		//ACHTUNG: Man muss jederzeit beenden d�rfen, ohne dass ein Fehler passiert !!!
+		//ACHTUNG: Man muss jederzeit beenden duerfen, ohne dass ein Fehler passiert !!!
 		while ( enumProcs.hasMoreElements()){
 			Dispatch objProcess = enumProcs.Next().toDispatch();
 			if(objProcess!=null){
