@@ -9,11 +9,11 @@ import basic.zBasic.ExceptionZZZ;
 import basic.zBasic.ReflectCodeZZZ;
 import basic.zBasic.util.datatype.string.StringZZZ;
 import basic.zKernel.IKernelZZZ;
-import basic.zKernel.KernelUseObjectZZZ;
+import basic.zKernel.AbstractKernelUseObjectZZZ;
 import basic.zKernel.KernelZZZ;
 import basic.zKernel.flag.IFlagZUserZZZ;
 
-public class KernelWMIZZZ extends KernelUseObjectZZZ{
+public class KernelWMIZZZ extends AbstractKernelUseObjectZZZ{
 	private ActiveXComponent objWMIService = null;
 	
 	public KernelWMIZZZ(IKernelZZZ objKernel, String[] saFlagControl) throws ExceptionZZZ{
