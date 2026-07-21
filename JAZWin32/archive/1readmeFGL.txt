@@ -8,3 +8,6 @@ Am besten in das bin - Verzeichnis.
 z.B. 
 C:\java\jdk1.7.0_51\jre\bin
 C:\java\jdk1.8.0_202\bin               //aktuell genutzt auf dem TUBAF Rechner
+
+DLLs gefunden hier:
+https://github.com/freemansoft/jacob-project/releases#release-Root_B-1_14_3
