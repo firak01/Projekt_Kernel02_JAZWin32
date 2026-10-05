@@ -7,14 +7,14 @@ import basic.zBasic.IConstantZZZ;
 import basic.zBasic.ReflectCodeZZZ;
 import basic.zWin32.com.shell.KernelEventLogZZZ;
 import basic.zKernel.KernelZZZ;
-import custom.zKernel.LogZZZ;
+import custom.zKernel.KernelLogZZZ;
 import junit.framework.TestCase;
 
 public class KernelEventLogZZZTest extends TestCase  implements IConstantZZZ{
 		
 	//Kernel und Log-Objekt
 	private KernelZZZ objKernel;
-	private LogZZZ objLog;
+	private KernelLogZZZ objLog;
 		
 	/// +++ Die eigentlichen Test-Objekte
 	private KernelEventLogZZZ  objEventLogTest=null;

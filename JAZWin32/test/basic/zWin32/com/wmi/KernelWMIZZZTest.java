@@ -8,7 +8,7 @@ import basic.zBasic.IConstantZZZ;
 import basic.zBasic.ReflectCodeZZZ;
 import basic.zWin32.com.wmi.KernelWMIZZZ;
 import basic.zKernel.KernelZZZ;
-import custom.zKernel.LogZZZ;
+import custom.zKernel.KernelLogZZZ;
 
 public class KernelWMIZZZTest extends TestCase implements IConstantZZZ{
 		
@@ -19,7 +19,7 @@ public class KernelWMIZZZTest extends TestCase implements IConstantZZZ{
 	
 	//Kernel und Log-Objekt
 	private KernelZZZ objKernel;
-	private LogZZZ objLog;
+	private KernelLogZZZ objLog;
 		
 	/// +++ Die eigentlichen Test-Objekte
 	private KernelWMIZZZ  objWMITest;
