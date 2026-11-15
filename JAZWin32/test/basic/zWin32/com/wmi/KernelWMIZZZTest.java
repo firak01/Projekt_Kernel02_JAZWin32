@@ -5,7 +5,7 @@ import java.io.IOException;
 import junit.framework.TestCase;
 import basic.zBasic.ExceptionZZZ;
 import basic.zBasic.IConstantZZZ;
-import basic.zBasic.ReflectCodeZZZ;
+import basic.zBasic.reflection.ReflectCodeZZZ;
 import basic.zWin32.com.wmi.KernelWMIZZZ;
 import basic.zKernel.KernelZZZ;
 import custom.zKernel.KernelLogZZZ;

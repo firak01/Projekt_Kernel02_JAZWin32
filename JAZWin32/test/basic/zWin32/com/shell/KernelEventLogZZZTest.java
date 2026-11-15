@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import basic.zBasic.ExceptionZZZ;
 import basic.zBasic.IConstantZZZ;
-import basic.zBasic.ReflectCodeZZZ;
+import basic.zBasic.reflection.ReflectCodeZZZ;
 import basic.zWin32.com.shell.KernelEventLogZZZ;
 import basic.zKernel.KernelZZZ;
 import custom.zKernel.KernelLogZZZ;
